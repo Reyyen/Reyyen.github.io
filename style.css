@@ -1,0 +1,188 @@
+.title{
+    font-size: 14px;
+    color: rgb(183, 130, 232);
+    
+}
+.head-log{
+    text-align: center; /* Horizontally center */
+}
+.urun-adi{
+    font-size: 45px;
+    letter-spacing: 3px;
+    font-weight: 400;
+}
+.urun-acıklama{
+    font-size: 35px;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+.horizontal-line {
+    width: 1cm;
+    height: 1px;
+    margin-left: 70px;
+    background-color: black;
+}
+.italic-line {
+    position: relative;
+    display: inline-block;
+    font-style: italic;
+    font-size: 30px;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+.italic{
+    position: relative;
+    display: inline-block;
+    font-style: italic;
+    color: rgb(150, 55, 55);
+    font-size: 30px;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+.italic-line::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: black; /* Adjust the color as needed */
+    
+}
+.circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+.circle-solid{
+    width: 35px;
+    height: 35px;
+    margin-top: 6px;
+    margin-left: 6px;
+    border-radius: 50%; /* Makes the shape a circle */
+    background-color: rgb(199, 191, 148); /* Change to the color you prefer */
+}
+.image-container {
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+}
+
+.image-container img {
+    transition: transform 0.3s ease; /* Apply smooth transition */
+}
+
+.image-container:hover img {
+    transform: scale(1.9); /* Enlarge the image on hover */
+}
+.yeni-fiat{
+    color: rgb(101, 48, 48);
+}
+.gradient-background {
+    background: linear-gradient(300deg, black, white, #ef8172);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.heart-checkbox {
+    display: none; /* Hide the default checkbox */
+}
+
+.heart-label::before {
+    content: "\2665"; /* Unicode character for a heart */
+    display: inline-block;
+    font-size: 30px;
+    padding-right: 5px;
+    color: rgb(157, 150, 150); /* Set the initial color to black */
+}
+.heart-label {
+    cursor: pointer;
+}
+.heart-label.checked::before {
+    color: red; /* Change the heart color when the checkbox is checked */
+}
+.checkbox-position {
+    position: absolute;
+    top: 10px; /* Adjust the top position as needed */
+    right: 20px; /* Adjust the left position as needed */
+    z-index: 2; /* Ensure the checkbox is above the image */
+}
+.circular-button {
+    width: 50px;
+    height: 50px;
+    background-color: #434d57;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+#second{
+    position:sticky;
+    width:100%;
+    top: 0px;
+    background-color: rgba(256, 256, 256, 0.5);
+    z-index: 1;
+}
+
+.ust{
+    text-align: right;
+}
+
+.popup {
+    float: left;
+    display: block; /* Initially set to 'block' to make it appear */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    z-index: 9999; /* Ensure it's above other elements */
+    justify-content: top;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: black;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #333;
+}
+
+.close-button:hover {
+    color: red;
+}
+.text{
+    color: white;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+.clear{
+    clear: both;
+}
